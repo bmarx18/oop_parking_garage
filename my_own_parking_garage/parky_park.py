@@ -80,7 +80,7 @@ class Garage():
         else:
             self.valet -= 1
 
-        if paid.lower().strip() == 'pay' or 'paid':
+        if paid.lower().strip() in ('pay', 'paid'):
             print("Thank you please exit the garage.\n")
             del(self.customerInfo[locate])
         else:
